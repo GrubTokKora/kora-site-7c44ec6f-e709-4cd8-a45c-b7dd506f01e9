@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://staging.kora-7c44ec6f-e709-4cd8-a45c-b7dd506f01e9.pages.dev/sitemap.xml
+Sitemap: https://kora-7c44ec6f-e709-4cd8-a45c-b7dd506f01e9.pages.dev/sitemap.xml

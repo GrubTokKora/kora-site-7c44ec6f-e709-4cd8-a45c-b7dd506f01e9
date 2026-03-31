@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomatillo Taco Joint – Authentic Mexican Food in New Haven, CT</title>
+    <meta name="description" content="Discover authentic Mexican food at Tomatillo Taco Joint in New Haven. We use fresh, all-natural ingredients to create delicious tacos, burritos, and more. Order online for delivery!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tomatillo Taco Joint – Authentic Mexican Food in New Haven, CT">
+    <meta property="og:description" content="Discover authentic Mexican food at Tomatillo Taco Joint in New Haven. We use fresh, all-natural ingredients to create delicious tacos, burritos, and more. Order online for delivery!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg">
+    <meta property="og:url" content="https://www.tomatillotacojoint.com/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.tomatillotacojoint.com/">
+    
+    <!-- Hero image preload -->
+    <link rel="preload" as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Tomatillo Taco Joint",
+      "description": "Tomatillo is dedicated to providing our local communities with authentic Mexican food using only fresh, all-natural ingredients.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "320 Elm Street",
+        "addressLocality": "New Haven",
+        "addressRegion": "CT",
+        "postalCode": "06511",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-203-782-6000",
+      "servesCuisine": "Mexican",
+      "openingHours": [
+        "Mo 11:30-20:00",
+        "Tu 11:30-23:00",
+        "Fr 11:30-00:00",
+        "Sa 11:30-01:00",
+        "Su 11:30-22:00"
+      ],
+      "image": "https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg",
+      "url": "https://www.tomatillotacojoint.com/"
+    }
+    </script>
+    
+    <!-- Tailwind + Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7C500',
+                        secondary: '#E63973',
+                        accent: '#222222',
+                    },
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                        'display': ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg');
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-accent font-sans">
+
+    <!-- Header -->
+    <header id="home" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972095_wrniyv.jpg" alt="Tomatillo Taco Joint Logo" class="h-12 w-12 object-contain">
+                <span class="font-display text-xl uppercase tracking-wider">Tomatillo</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                <a href="#menu" class="text-gray-600 hover:text-primary transition">Menu</a>
+                <a href="#gallery" class="text-gray-600 hover:text-primary transition">Gallery</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+            </div>
+            <a href="https://www.ubereats.com/en-US/connecticut/food-delivery/tomatillo-taco-joint-new-haven/4ObIhXrZRDSpLR_agD6hMg/" target="_blank" class="hidden md:inline-block bg-primary text-accent font-bold py-2 px-5 rounded-full hover:bg-yellow-500 transition">Order Online</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-primary transition">About</a>
+            <a href="#menu" class="block text-gray-600 hover:text-primary transition">Menu</a>
+            <a href="#gallery" class="block text-gray-600 hover:text-primary transition">Gallery</a>
+            <a href="#contact" class="block text-gray-600 hover:text-primary transition">Contact</a>
+            <a href="https://www.ubereats.com/en-US/connecticut/food-delivery/tomatillo-taco-joint-new-haven/4ObIhXrZRDSpLR_agD6hMg/" target="_blank" class="block bg-primary text-accent font-bold py-2 px-5 rounded-full text-center mt-2 hover:bg-yellow-500 transition">Order Online</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[80vh] min-h-[500px] bg-cover bg-center flex items-center justify-center text-white text-center hero-bg">
+            <!-- The hero image is a CSS background for the overlay effect, but we include a hidden img for SEO and performance -->
+            <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg" alt="Delicious tacos from Tomatillo Taco Joint" class="hidden" loading="eager" fetchpriority="high" decoding="async" width="1920" height="1080">
+            <div class="z-10 p-6">
+                <h1 class="font-display text-5xl md:text-7xl uppercase tracking-widest text-primary">Tomatillo Taco Joint</h1>
+                <p class="mt-4 text-lg md:text-2xl max-w-2xl mx-auto">We believe in fresh authentic flavors and ingredients cooked to serve!</p>
+                <a href="https://www.ubereats.com/en-US/connecticut/food-delivery/tomatillo-taco-joint-new-haven/4ObIhXrZRDSpLR_agD6hMg/" target="_blank" class="mt-8 inline-block bg-primary text-accent font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition transform hover:scale-105">Order for Delivery</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-display text-4xl uppercase text-secondary">Authentic Mexican Food</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-8"></div>
+                <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                    Open since 2011, Tomatillo is a locally owned business dedicated to providing our communities with authentic Mexican food using only fresh, all-natural ingredients. All our food is cooked at each individual location, sans any pre-packaged ingredients or microwaves. We believe in fresh authentic flavors and ingredients cooked to serve! Tomatillo is keepin' it green - we use green biodegradable paper products!
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="font-display text-4xl uppercase text-center text-secondary">Our Menu</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-12"></div>
+                
+                <div class="space-y-12">
+                    
+                    <!-- Category: Taco Spread -->
+                    <div>
+                        <h3 class="font-display text-3xl uppercase text-accent mb-6">Taco Spread</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-baseline">
+                                    <h4 class="text-xl font-bold">Min. 20 People</h4>
+                                    <span class="text-lg font-bold text-primary">$15.00</span>
+                                </div>
+                                <p class="text-gray-600 mt-2">Cilantro Lime Rice Or Dirty Spanish Rice Black Or Pinto Beans Pico De Gallo, Salsa Verde, Habernero Salsa, Cheese, Lettuce, Pickled Jalapeño Or Fresh Jalepeños, Sour Cream Soft Flour Tortillas, Hard Corn Tortillas, And Tortilla Chips Choice Of: Chicken Chili Beef Carnitas</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-baseline">
+                                    <h4 class="text-xl font-bold">Guacamole (Extra Per Person)</h4>
+                                    <span class="text-lg font-bold text-primary">$3.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Bigger Taco Spread -->
+                    <div>
+                        <h3 class="font-display text-3xl uppercase text-accent mb-6">Bigger Taco Spread</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-baseline">
+                                    <h4 class="text-xl font-bold">Min. 20 People</h4>
+                                    <span class="text-lg font-bold text-primary">$16.50</span>
+                                </div>
+                                <p class="text-gray-600 mt-2">Cilantro Lime Rice Or Dirty Spanish Rice Black Or Pinto Beans Pico De Gallo, Corn Salsa, Fajita Style, Salsa Verde, Habernero Salsa, Cheese, Lettuce, Pickled Jalapeño Or Fresh Jalepeños, Sour Cream Soft Flour Tortillas, Hard Corn Tortillas, And Tortilla Chips Choice Of: Chicken Chili Beef Carnitas</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-baseline">
+                                    <h4 class="text-xl font-bold">Guacamole (Extra Per Person)</h4>
+                                    <span class="text-lg font-bold text-primary">$3.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Categories -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Taco Platters</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Ready To Share 15 Tacos</span><span>$65.00</span></div>
+                                <p class="text-sm text-gray-500">Choice Of Hard Or Soft Shell Tortillas Topped With Cheese, Pico De Gallo, & Lettuce. Salsa Verde & Habanero On The Side. Choice Of Filling: Hacked Chicken, Braised Beef, Assorted Carnitas</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Take Home Taco Bar</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Build It & Create At Home!</span></div>
+                                <p class="text-sm text-gray-500">12 Hard & 12 Soft Tortillas. Includes: Cheese, Pico De Gallo, Lettuce, Cilantro, Jalapenos, & Salsas. Choice Of 2: Hacked Chicken, Carnitas, Braised Beef, Or Chili</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Burritos</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Burrito Box (10)</span></div>
+                                <p class="text-sm text-gray-500">Choice Of Filling: Hacked Chicken, Braised Beef, Carnitas, Vegetarian. Filled With Cilantro-lime Rice, Black Beans, Pico De Gallo, Lettuce, Salsa Verde. Served With Chips & Salsa</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Enchiladas</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Three Cheese</span><span>$105.00</span></div>
+                                <div class="flex justify-between"><span class="font-bold">Chicken, Beef, Or Carnitas</span><span>$145.00</span></div>
+                                <p class="text-sm text-gray-500">Rolled In Corn Tortillas Topped With Cheese, Sour Cream & Cilantro. Choice Of Salsa Verde Or Salsa Roja. Served With Rice & Beans</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Taco Salad</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Min 8 People</span><span>$8.00</span></div>
+                                <p class="text-sm text-gray-500">Romaine, Black Beans, Corn Salsa, Pico De Gallo, Topped With Chips</p>
+                                <div class="flex justify-between"><span class="font-bold">Add Chicken, Or Beef</span><span>$5.00</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Quesadillas</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between"><span class="font-bold">Cheese</span><span>$70.00</span></div>
+                                <div class="flex justify-between"><span class="font-bold">Chicken</span><span>$90.00</span></div>
+                                <p class="text-sm text-gray-500">Served With Sour Cream & Pico De Gallo</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Chips & Sides</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between"><span>Chips & Guacamole (Serves 8-10)</span><span>$55.00</span></div>
+                                <div class="flex justify-between"><span>Chips & Salsa (Serves 8-10)</span><span>$35.00</span></div>
+                                <div class="flex justify-between"><span>6-Layer Dip With Chips (Serves 8-10)</span><span>$45.00</span></div>
+                                <div class="flex justify-between"><span>Side Of Rice (Min. 10 people)</span><span>$2.50</span></div>
+                                <div class="flex justify-between"><span>Side of Beans (Min. 10 people)</span><span>$2.50</span></div>
+                                <div class="flex justify-between"><span>Chili With Chips (Min. 10 people)</span><span>$5.00</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Desserts</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between"><span>Churros With Dulce De Leche (Serves 8-10)</span><span>$55.00</span></div>
+                                <div class="flex justify-between"><span>Assorted (Serves 8-10)</span><span>$50.00</span></div>
+                                <div class="flex justify-between"><span>Chipotle Brownie Bites (Serves 8-10)</span><span>$40.00</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-accent mb-4">Drinks</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between"><span>Lemonade Or Limeade</span><span>$40.00</span></div>
+                                <div class="flex justify-between"><span>Arnold Palmer</span><span>$45.00</span></div>
+                                <div class="flex justify-between"><span>Fresh Brewed Iced Tea</span><span>$40.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="font-display text-4xl uppercase text-center text-secondary">Our Vibe</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-12"></div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_a0ir5y.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_8p41yi.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972096_jvcjh0.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972097_4vbcm1.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972097_ffy0de.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972097_8813v9.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972098_48z6s4.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                    <img src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/7c44ec6f-e709-4cd8-a45c-b7dd506f01e9/10ba98a4-a410-4015-99d9-701074e2e5bc/1774972098_65yggl.jpg" alt="Gallery image of food" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Hours Section -->
+        <section id="contact" class="py-20 bg-accent text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="font-display text-4xl uppercase text-center text-primary">Visit Us</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 mb-12"></div>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-primary mb-2">Location</h3>
+                            <p class="text-gray-300">320 Elm Street<br>New Haven, CT 06511</p>
+                            <a href="https://goo.gl/maps/Ab9QLNT68EC2" target="_blank" class="inline-block mt-2 text-primary hover:text-yellow-300 transition">Get Directions &rarr;</a>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl uppercase text-primary mb-2">Contact</h3>
+                            <p class="text-gray-300">
+                                <a href="tel:203-782-6000" class="hover:text-yellow-300">203-782-6000</a>
+                            </p>
+                            <p class="text-gray-300">
+                                <a href="mailto:newhaven@tomatillotacojoint.com" class="hover:text-yellow-300">newhaven@tomatillotacojoint.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-2xl uppercase text-primary mb-2">Hours</h3>
+                        <ul class="text-gray-300 space-y-1">
+                            <li class="flex justify-between"><span>Monday</span> <span>11:30 AM - 8:00 PM</span></li>
+                            <li class="flex justify-between"><span>Tuesday</span> <span>11:30 AM - 11:00 PM</span></li>
+                            <li class="flex justify-between"><span>Wednesday</span> <span>Closed</span></li>
+                            <li class="flex justify-between"><span>Thursday</span> <span>Closed</span></li>
+                            <li class="flex justify-between"><span>Friday</span> <span>11:30 AM - 12:00 AM</span></li>
+                            <li class="flex justify-between"><span>Saturday</span> <span>11:30 AM - 1:00 AM</span></li>
+                            <li class="flex justify-between"><span>Sunday</span> <span>11:30 AM - 10:00 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.instagram.com/tomatillotacojoint" target="_blank" class="hover:text-primary transition"><i data-lucide="instagram"></i></a>
+                <a href="https://www.facebook.com/tomatillonewhaven" target="_blank" class="hover:text-primary transition"><i data-lucide="facebook"></i></a>
+                <a href="https://www.twitter.com/tomatillotj" target="_blank" class="hover:text-primary transition"><i data-lucide="twitter"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Tomatillo Taco Joint. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

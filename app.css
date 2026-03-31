@@ -459,7 +459,8 @@ body.route-catering .nav-main > li > a:hover {
   margin-inline: auto;
 }
 
-.page-hero h1 {
+.page-hero h1,
+.page-hero h2 {
   margin: 0;
   font-size: clamp(2.25rem, 5vw, 3.75rem);
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
@@ -472,7 +473,8 @@ body.route-catering .nav-main > li > a:hover {
   text-align: center;
 }
 
-.page-hero--center h1 {
+.page-hero--center h1,
+.page-hero--center h2 {
   margin-inline: auto;
 }
 
@@ -504,7 +506,8 @@ body.route-catering .nav-main > li > a:hover {
   margin-inline: auto;
 }
 
-.catering-hero h1 {
+.catering-hero h1,
+.catering-hero h2 {
   margin: 0;
   color: #fff;
   font-size: clamp(2.7rem, 5vw, 4rem);
@@ -1789,7 +1792,8 @@ section {
     width: min(100% - 1.5rem, 1120px);
   }
 
-  .catering-hero h1 {
+  .catering-hero h1,
+  .catering-hero h2 {
     font-size: clamp(2.2rem, 10vw, 3.2rem);
   }
 

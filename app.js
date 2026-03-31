@@ -50,6 +50,11 @@
     if (el) el.setAttribute("content", value);
   }
 
+  function setLinkHref(selector, value) {
+    var el = document.querySelector(selector);
+    if (el) el.setAttribute("href", value);
+  }
+
   function syncRouteSeo(routeId) {
     var title = ROUTE_TITLES[routeId] || ROUTE_TITLES.home;
     var description = ROUTE_DESCRIPTIONS[routeId] || ROUTE_DESCRIPTIONS.home;
@@ -63,6 +68,7 @@
     setMetaContent('meta[property="og:url"]', fullUrl);
     setMetaContent('meta[name="twitter:title"]', title);
     setMetaContent('meta[name="twitter:description"]', description);
+    setLinkHref('link[rel="canonical"]', fullUrl);
   }
 
   function showRoutes(routeId) {

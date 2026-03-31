@@ -477,18 +477,29 @@ body.route-catering .nav-main > li > a:hover {
 }
 
 .catering-hero {
+  position: relative;
   min-height: 540px;
   margin-top: 0;
   padding: calc(var(--nav-h) + 14rem) 0 1rem;
   background-color: #2b2118;
-  background-position: center -36px;
+  background-position: center -250px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-end;
 }
 
+.catering-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.33);
+  pointer-events: none;
+}
+
 .catering-hero__inner {
+  position: relative;
+  z-index: 1;
   width: min(1120px, 100% - 3rem);
   margin-inline: auto;
 }
@@ -1771,7 +1782,7 @@ section {
   .catering-hero {
     min-height: 430px;
     padding-top: calc(var(--nav-h) + 10rem);
-    background-position: center center;
+    background-position: center -28px;
   }
 
   .catering-hero__inner {

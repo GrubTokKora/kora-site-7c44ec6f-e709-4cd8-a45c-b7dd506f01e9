@@ -13,6 +13,18 @@
     photos: "Photos | Tomatillo Taco Joint",
   };
 
+  var ROUTE_DESCRIPTIONS = {
+    home: "Tomatillo Taco Joint serves fresh, all-natural Mexican food in New Haven and Cos Cob, Connecticut.",
+    about: "Learn the story behind Tomatillo Taco Joint and our commitment to fresh, authentic Mexican food.",
+    menu: "Browse the Tomatillo Taco Joint menu, from tacos and burritos to drinks and more.",
+    catering: "Order catering from Tomatillo Taco Joint for office lunches, parties, and special events.",
+    "tequila-bar": "Explore Tomatillo Taco Joint's tequila bar offerings, cocktails, and downloadable menu options.",
+    "new-haven": "Visit Tomatillo Taco Joint in New Haven for fresh Mexican food, online ordering, and local contact info.",
+    "cos-cob": "Visit Tomatillo Taco Joint in Cos Cob for fresh Mexican food, online ordering, and local contact info.",
+    events: "See the latest Tomatillo Taco Joint events and where to follow updates for upcoming happenings.",
+    photos: "View food and dining photos from Tomatillo Taco Joint in New Haven and Cos Cob.",
+  };
+
   var ALLOWED = Object.keys(ROUTE_TITLES);
 
   function normalizeRoute(segment) {
@@ -33,6 +45,26 @@
     document.documentElement.classList.toggle("home-scroll-snap", on);
   }
 
+  function setMetaContent(selector, value) {
+    var el = document.querySelector(selector);
+    if (el) el.setAttribute("content", value);
+  }
+
+  function syncRouteSeo(routeId) {
+    var title = ROUTE_TITLES[routeId] || ROUTE_TITLES.home;
+    var description = ROUTE_DESCRIPTIONS[routeId] || ROUTE_DESCRIPTIONS.home;
+    var routeHash = "#/" + routeId;
+    var fullUrl = location.origin + location.pathname + (routeId === "home" ? "#/" : routeHash);
+
+    document.title = title;
+    setMetaContent('meta[name="description"]', description);
+    setMetaContent('meta[property="og:title"]', title);
+    setMetaContent('meta[property="og:description"]', description);
+    setMetaContent('meta[property="og:url"]', fullUrl);
+    setMetaContent('meta[name="twitter:title"]', title);
+    setMetaContent('meta[name="twitter:description"]', description);
+  }
+
   function showRoutes(routeId) {
     document.querySelectorAll(".route").forEach(function (el) {
       el.classList.toggle("is-active", el.id === "route-" + routeId);
@@ -43,7 +75,7 @@
       .concat("route-" + routeId)
       .join(" ");
     setHtmlScrollSnap(routeId === "home");
-    document.title = ROUTE_TITLES[routeId] || ROUTE_TITLES.home;
+    syncRouteSeo(routeId);
     window.scrollTo(0, 0);
     var header = document.querySelector(".site-header");
     var toggle = document.querySelector(".nav-toggle");
